@@ -1,0 +1,37 @@
+// Set up Gutenberg colours
+@each $color, $value in $theme-colors {
+    .has-#{$color}-color {
+        color: $value;
+    }
+
+    .has-#{$color}-background-color {
+        background-color: $value;
+
+        &.wp-block-button__link:hover {
+            background-color: darken($value, 15%);
+        }
+    }
+
+    // Modified button block
+    .wp-block-button.is-style-outline {
+        .has-#{$color}-color {
+            color: $value;
+        }
+
+        .has-#{$color}-background-color {
+            background: transparent;
+            border-color: $value;
+
+            &:hover, &:focus {
+                background: $value;
+            }
+        }
+    }
+}
+
+// Paragraph sizes.
+@each $size, $value in $theme-paragraph-sizes {
+    .has-#{$size}-font-size {
+        font-size: #{$value}px;
+    }
+}

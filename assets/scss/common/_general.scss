@@ -1,0 +1,48 @@
+html {
+    font-size: 18px !important;
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    font-weight: bold;
+}
+
+// Navigation
+@media screen and (min-width: 600px) and (max-width: 782px) {
+    .admin-bar .navbar.fixed-top {
+        top: 46px;
+    }
+
+    .wrap {
+        padding-top: $navbar-height;
+    }
+}
+
+@media screen and (min-width: 783px) {
+    .admin-bar .navbar.fixed-top {
+        top: 32px;
+    }
+
+    .wrap {
+        padding-top: $navbar-height;
+    }
+}
+
+// Footer
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-brand {
+    text-align: center;
+
+    img {
+        max-width: 200px;
+    }
+}
