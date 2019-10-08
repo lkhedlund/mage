@@ -1,6 +1,6 @@
 <?php
 
-namespace Mage\Wrapper;
+namespace Mage;
 
 /**
  * Theme wrapper

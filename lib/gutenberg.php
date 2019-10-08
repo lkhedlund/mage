@@ -2,7 +2,7 @@
 /**
  * Include gutenberg functionality here.
  */
-namespace Mage\Gutenberg;
+namespace Mage;
 
 /**
  * Register theme supports

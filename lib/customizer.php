@@ -1,6 +1,6 @@
 <?php
 
-namespace Mage\Customizer;
+namespace Mage;
 
 /**
  * Add postMesmage support

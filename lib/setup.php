@@ -1,8 +1,6 @@
 <?php
 
-namespace Mage\Setup;
-
-use Mage\Assets;
+namespace Mage;
 
 /**
  * Theme setup
