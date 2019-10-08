@@ -1,17 +1,75 @@
 // Bootstrap Variables
 //
 // Color system
-$white:         #fff !default;
-$black:         #000 !default;
-$light:         #f8f8f8 !default;
-$gray:          #a2a2a2 !default;
-$dark:          #454545 !default;
-$primary:       #17a2b8 !default;
-$secondary:     #3f17b8  !default;
-$success:       #17b852 !default;
-$info:          #1edbe2 !default;
-$warning:       #ffc107 !default;
-$danger:        #dc3545 !default;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
 
 /**
  * TODO: Remember to set theme colours and paragraph sizes in gutenberg.php
@@ -27,7 +85,7 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "gray":       $gray,
+    "gray":       $gray-500,
     "dark":       $dark,
     "white":      $white,
     "black":      $black,
@@ -181,9 +239,9 @@ $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
 
-$text-muted:                  $gray !default;
+$text-muted:                  $gray-700 !default;
 
-$blockquote-small-color:      $gray !default;
+$blockquote-small-color:      $gray-700 !default;
 $blockquote-small-font-size:  $small-font-size !default;
 $blockquote-font-size:        $font-size-base * 1.25 !default;
 
