@@ -26,7 +26,8 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader, 
                     "css-loader", 
-                    "sass-loader"
+                    "sass-loader",
+                    "postcss-loader"
                 ],
             },
             {
@@ -66,10 +67,5 @@ module.exports = {
         minimizer: [
             new OptimizeCSSAssetsPlugin({})
         ]
-    },
-    resolve: {
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js'
-        }
     }
 };

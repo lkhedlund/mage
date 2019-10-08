@@ -1,6 +1,6 @@
 # [Mage](https://github.com/lkhedlund/mage)
 
-Mage is a WordPress starter theme based on Sage 8, with Webpack 4, Gutenberg theming, a Vue option, and more!
+Mage is a WordPress starter theme based on Sage 8, and includes Webpack 4, Gutenberg theming, and more!
 
 ## Requirements
 

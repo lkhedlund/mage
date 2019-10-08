@@ -1,8 +1,8 @@
 {
-  "name": "mage",
+  "name": "sage",
   "version": "8.6.0",
   "private": true,
-  "description": "Converted Mage Theme.",
+  "description": "Converted Sage Theme.",
   "scripts": {
     "build": "webpack --mode production --progress --config assets/build/webpack.config.js",
     "watch": "webpack --mode development --hide-modules --watch --config assets/build/webpack.config.js"
@@ -34,7 +34,6 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0",
-    "vue": "^2.6.10"
+    "popper.js": "^1.15.0"
   }
 }
