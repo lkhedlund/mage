@@ -1,13 +1,15 @@
 /**
  *  Editor Styles
  */
-.editor-styles-wrapper {
-    @import "common/_variables";
 
-    @import "~bootstrap/scss/_functions";
-    @import "~bootstrap/scss/_variables";
-    @import "~bootstrap/scss/_mixins";
-    @import "~bootstrap/scss/_utilities";
+@import "common/_variables";
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_utilities";
+
+.editor-styles-wrapper {
+    font-family: $font-family-sans-serif !important;
 
     @import "~bootstrap/scss/_root";
     @import "~bootstrap/scss/_type";
