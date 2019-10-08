@@ -4,8 +4,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="<?= home_url('/'); ?>">
-            <?php if (get_theme_mod('upload_site_logo')) : ?>
-                <img src="<?= get_theme_mod('upload_site_logo'); ?>" alt="<?= esc_attr(get_bloginfo('name', 'display')); ?>" class="brand-image">
+            <?php if (get_theme_mod('custom_logo')) : ?>
+                <img src="<?= get_theme_mod('custom_logo'); ?>" alt="<?= esc_attr(get_bloginfo('name', 'display')); ?>" class="brand-image">
             <?php else :
                 bloginfo('name');
             endif; ?>
