@@ -1,12 +1,9 @@
 @import "common/_variables";
 
-// Library
 @import "~bootstrap/scss/bootstrap";
 
-// Common
 @import "common/_mixins";
 @import "common/_general";
 
-// Theme
 @import "theme/_grid";
 @import "theme/_widgets";
