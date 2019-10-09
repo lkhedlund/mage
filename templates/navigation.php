@@ -4,8 +4,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="<?= home_url('/'); ?>">
-            <?php if (get_theme_mod('custom_logo')) : ?>
-                <?php the_custom_logo(); ?>
+            <?php if (has_custom_logo()) : ?>
+                <img src="<?= Mage\get_custom_logo_url(); ?>" alt="Brand logo" />
             <?php else :
                 bloginfo('name');
             endif; ?>

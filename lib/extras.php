@@ -44,6 +44,15 @@ function body_class($classes) {
 add_filter('body_class', __NAMESPACE__ . '\\body_class');
 
 /**
+ * Get the custom logo url
+ */
+function get_custom_logo_url() {
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+    return $logo[0];
+}
+
+/**
  * Clean up the_excerpt()
  */
 function excerpt_more() {
