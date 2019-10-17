@@ -18,8 +18,8 @@
                 'container' => 'div',
                 'container_class' => 'collapse navbar-collapse',
                 'menu_class' => 'navbar-nav mr-auto',
-                'fallback_cb' => 'BS_Navwalker::fallback',
-                'walker' => new BS_Navwalker()
+                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                'walker' => new WP_Bootstrap_Navwalker()
             ]);
         endif; ?>
     </div>

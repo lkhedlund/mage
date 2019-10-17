@@ -12,12 +12,12 @@
 $mage_version = '1.0.0';
 
 $mage_includes = [
-  'lib/extras.php',     // Custom functions
-  'lib/setup.php',      // Theme setup
-  'lib/wrapper.php',    // Theme wrapper class
+  'lib/extras.php',    // Custom functions
+  'lib/setup.php',     // Theme setup
+  'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/navwalker.php',  // Navwalker
-  'lib/gutenberg.php'   // Gutenberg
+  'lib/gutenberg.php', // Gutenberg
+  'lib/navwalker.php'  // Navwalker
 ];
 
 foreach ($mage_includes as $file) {

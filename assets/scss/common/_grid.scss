@@ -1,0 +1,26 @@
+.layout-container {
+    .wrap {
+        @include make-container();
+    }
+    
+    .content {
+        @include make-row();
+    }
+    
+    main, aside {
+        @include make-col-ready();
+        @include make-col(12);
+    }
+    
+    .sidebar-primary {
+        @include media-breakpoint-up('md') {
+            main {
+                @include make-col(8);
+            }
+        
+            aside {
+                @include make-col(4);
+            }
+        }
+    }    
+}
