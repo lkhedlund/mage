@@ -1,8 +1,10 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
+const dist = path.resolve(__dirname, '../../dist');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -12,7 +14,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, '../../dist'),
+        path: dist,
     },
     module: {
         rules: [
@@ -26,8 +28,7 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader, 
                     "css-loader", 
-                    "sass-loader",
-                    "postcss-loader"
+                    "sass-loader"
                 ],
             },
             {
@@ -62,10 +63,15 @@ module.exports = {
         }),
         new MinifyPlugin(),
         new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+			patterns: [
+				{ from: 'assets/images', to: 'images' }
+			]   
+		})
     ],
     optimization: {
         minimizer: [
-            new OptimizeCSSAssetsPlugin({})
+          new OptimizeCSSAssetsPlugin({})
         ]
-    }
+    },
 };

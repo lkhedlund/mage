@@ -1,5 +1,5 @@
 {
-  "name": "sage",
+  "name": "mage",
   "version": "8.6.0",
   "private": true,
   "description": "Converted Sage Theme.",
@@ -18,10 +18,11 @@
     "babel-minify-webpack-plugin": "^0.3.1",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^2.1.1",
     "file-loader": "^1.1.11",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "resolve-url-loader": "^2.2.1",
@@ -29,10 +30,10 @@
     "style-loader": "^0.20.2",
     "url-loader": "^0.6.2",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.5.2",
     "jquery": "^3.5.0",
     "popper.js": "^1.15.0"
   }
